@@ -11,7 +11,11 @@ class system_update{
     timeout => 0
   }
   $sysPackages = [
-    "curl"
+    "curl",
+    "python-pip",
+    "sqlite-devel",
+    "sqlite",
+    "python-devel"
   ]
   package {$sysPackages:
     ensure => "installed",
