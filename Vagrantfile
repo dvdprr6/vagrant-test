@@ -18,5 +18,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file = "setup.pp"
   end
+  
+  # If you want to use shell scripts for provisioning
+  #config.vm.provision :shell do |config|
+  #  config.path = "scripts/install.sh
+  #end
 
 end
